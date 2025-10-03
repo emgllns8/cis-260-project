@@ -26,6 +26,90 @@ ul li a {
     margin-right: 5px;
 }
 
+.container {
+    position: relative;
+    width: 15%;
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+.image {
+
+    width: 100%;
+    height: auto;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.role {
+    display: block;
+    margin: auto;
+    width: 25%;
+    padding-top: 45%;
+}
+
+span {
+    display: inline-block;
+}
+
+.name {
+    margin-left: 140px;
+    padding-top: 10px;
+    font-size: 55px;
+    color: red;
+}
+
+.E {
+    transform: translate(10px, 55px) rotate(-30deg);
+}
+
+.v {
+    transform: translate(15px, 35px) rotate(-12deg);
+}
+
+.a {
+    transform: translate(25px, 35px) rotate(15deg);
+}
+
+.n {
+    transform: translate(30px, 50px) rotate(30deg);
+}
+
+.creator {
+    width: 20%;
+    height: auto;
+    border-radius: 80%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
 footer {
     margin-top: 845px;
     text-align: center;
